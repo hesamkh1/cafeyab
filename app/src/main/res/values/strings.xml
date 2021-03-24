@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CafeYab</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pref_file">com.abc.preference_file</string>
+    <string name="pref_login_status">com.abc.preference_login_status</string>
+    <string name="pref_user_name">com.abc.preference_user_name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="login_massage">CafeYab helps you to have the closest and best</string>
+    <string name="about">This application is designed to find the nearest cafes around you with the features you want and find discounted cafes, as well as to find and book different events in cafes.</string>
+</resources>

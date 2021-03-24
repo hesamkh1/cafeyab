@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/parent_layout_nsearch">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+            android:id="@+id/cafename_nsearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:lineSpacingExtra="8sp"
+            android:text="Name"
+            android:textColor="#111"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:fontFamily="sans-serif-smallcaps" />
+
+            <TextView
+                android:id="@+id/address_nsearch"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:lineSpacingExtra="8sp"
+                android:text="Name"
+                android:textColor="#787878"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:fontFamily="sans-serif-smallcaps" />
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_nsearch"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/cafe_csiga" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginLeft="7dp"
+    app:cardCornerRadius="4dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.Home.events.SportEventFragment"
+            android:id="@+id/parent_layout_sportevent">
+
+
+            <ImageView
+                android:id="@+id/image_sportevent"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/cafe_csiga"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.8"
+                tools:layout_editor_absoluteX="9dp"></ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_sportevent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Start Time"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/time_sportevent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="22:22"
+                        android:padding="3dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Date"
+                        android:textColor="#ffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/date_sportevent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="2020/10/18"
+                        android:textColor="#ffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"></TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

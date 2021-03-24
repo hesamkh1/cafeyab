@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Home.NormalSearchFragment"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    >
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/nsearch_background">
+    <EditText
+        android:id="@+id/search_edit_text_normal"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:drawableLeft="@drawable/search1"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Find Your Cafe"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:layout_margin="30dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_nsearch"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+</LinearLayout>
+
+</LinearLayout>

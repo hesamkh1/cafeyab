@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#ffff"
+    android:id="@+id/parent_layout_pishnahadi"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="250dp"
+    android:layout_marginLeft="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+            <ImageView
+                android:id="@+id/imageView_pishnahadi"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                ></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="145dp"
+                android:background="#fff">
+            <TextView
+                android:id="@+id/cafe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:text="Cafe Name"
+                android:maxLines="1"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="left"/>
+
+
+            <TextView
+                android:id="@+id/cafe_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="Cafe Address"
+                android:textColor="#090909"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/allura"
+                android:gravity="center"
+                android:text="CafeYab"
+                android:textColor="#CAC9C9"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

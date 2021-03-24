@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context=".ui.Login.RegistrationFragment"
+    android:background="@drawable/orangebackground">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Form"
+        android:textAllCaps="false"
+        android:textColor="@color/bottomnav_event_color"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"
+        />
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/face"
+        android:textColorHint="#fff"
+        android:backgroundTint="#ffff"
+        android:ems="10"
+        android:hint=" Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.18"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/txt_user_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:backgroundTint="#ffff"
+        android:drawableLeft="@drawable/person"
+        android:ems="10"
+        android:hint=" User name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:backgroundTint="#ffff"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint=" Pasword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user_name"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/txt_passwords"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:backgroundTint="#ffff"
+        android:layout_marginTop="108dp"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint=" Confirm Pasword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user_name"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C82962FF"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_password"
+        app:layout_constraintVertical_bias="0.331" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

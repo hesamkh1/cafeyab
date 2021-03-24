@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="70dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroolview_advancesearch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:addStatesFromChildren="false"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.Home.AdvancedSearchFragment"
+                android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/advanced_search_background"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="7dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:orientation="horizontal"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/smokeicon"
+                                    android:padding="4dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/smoke_icon"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="7dp"></ImageView>
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginRight="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="casual"
+                                    android:lineSpacingExtra="14sp"
+                                    android:text="Smoke"
+                                    android:layout_toRightOf="@+id/smokeicon"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                                <Switch
+                                    android:id="@+id/smoke_advancesearch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:thumb="@drawable/swich_selector2"
+                                    android:track="@drawable/track"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="10dp"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="7dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:orientation="horizontal"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/vipicon"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/vip_icon"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="7dp"></ImageView>
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginRight="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:fontFamily="casual"
+                                    android:lineSpacingExtra="14sp"
+                                    android:text="Vip Room"
+                                    android:layout_toRightOf="@+id/vipicon"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                               <Switch
+                                android:id="@+id/viproom_advancesearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:showText="true"
+                                android:textOff="no"
+                                android:textOn="yes"
+                                android:thumb="@drawable/swich_selector"
+                                android:track="@drawable/track"
+                                  android:layout_alignParentRight="true"
+                                   android:layout_marginTop="7dp"
+                                   android:layout_marginRight="10dp"/>
+                            </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="7dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+                            <ImageView
+                                android:id="@+id/wrooficon"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/wroof_icon"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="7dp"></ImageView>
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:fontFamily="casual"
+                                android:lineSpacingExtra="14sp"
+                                android:text="Without Roof"
+                                android:layout_toRightOf="@+id/wrooficon"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                              <Switch
+                                android:id="@+id/wroof_advancesearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:showText="true"
+                                android:textOff="no"
+                                android:textOn="yes"
+                                android:thumb="@drawable/swich_selector"
+                                android:track="@drawable/track"
+                                  android:layout_alignParentRight="true"
+                                  android:layout_marginTop="7dp"
+                                  android:layout_marginRight="10dp" />
+                        </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="7dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+                            <ImageView
+                                android:id="@+id/hookahicon"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/hookah_icon"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="7dp"></ImageView>
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:fontFamily="casual"
+                                android:lineSpacingExtra="14sp"
+                                android:text="Hookah"
+                                android:layout_toRightOf="@+id/hookahicon"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                             <Switch
+                                android:id="@+id/hookah_advancesearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:showText="true"
+                                android:textOff="no"
+                                android:textOn="yes"
+                                android:thumb="@drawable/swich_selector"
+                                android:track="@drawable/track"
+                                 android:layout_alignParentRight="true"
+                                 android:layout_marginTop="7dp"
+                                 android:layout_marginRight="10dp"/>
+
+                        </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/counter_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/itemfound_advancedsearch_background"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/countofitems_advancedsearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="2dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="0"
+                            android:paddingRight="5dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                           />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Cafeshop suggest to you"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFEFE"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srlEnableOverScrollBounce="true">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                >
+
+
+
+                                <ImageView
+                                    android:id="@+id/imagelogo_advancedsearch"
+                                    android:layout_width="245dp"
+                                    android:layout_height="212dp"
+                                    android:src="@drawable/cafelogo"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview_advancedsearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"/>
+                            </RelativeLayout>
+
+                            <com.scwang.smartrefresh.layout.footer.FalsifyFooter
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/cafepic"/>
+
+                            </com.scwang.smartrefresh.layout.footer.FalsifyFooter>
+                        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+                        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/search_floating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|bottom"
+    android:src="@drawable/search1"
+    android:contentDescription="search"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="15dp"
+    android:layout_marginRight="25dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_toolbar"
+        android:icon="@drawable/home_toobar"
+        android:title="Home" />
+    <item
+        android:id="@+id/logout_toolbar"
+        android:icon="@drawable/logout"
+        android:title="logout" />
+    <item
+        android:id="@+id/about_toolbar"
+        android:icon="@drawable/about_toolbar"
+        android:title="about" />
+
+</menu>

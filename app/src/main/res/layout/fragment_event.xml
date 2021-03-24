@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Home.events.EventFragment"
+    android:orientation="vertical"
+
+    android:paddingBottom="70dp">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:animateLayoutChanges="?android:attr/windowSwipeToDismiss"
+        android:background="@color/mainColor"
+        app:tabGravity="center"
+        app:tabMode="scrollable"
+        app:tabRippleColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextAppearance="@style/Taabedlayout"
+        app:tabUnboundedRipple="true"
+        app:tabIndicatorColor="#ffff"
+        app:tabIndicatorHeight="3dp">
+
+    </com.google.android.material.tabs.TabLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagelogo_event"
+            android:layout_width="245dp"
+            android:layout_height="212dp"
+            android:layout_marginBottom="120dp"
+            android:src="@drawable/cafelogo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+            <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
